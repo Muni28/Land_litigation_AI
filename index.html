@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Land Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🌐 Navbar -->
+<div class="navbar">
+    <h2>🏛️ Land Intelligence System</h2>
+    <div>
+        <button onclick="toggleDarkMode()">🌙</button>
+        <button onclick="logout()">🚪 Logout</button>
+    </div>
+</div>
+
+<!-- 📦 Dashboard -->
+<div class="dashboard">
+
+    <div class="card">
+        <h3>🔍 Search Land</h3>
+        <input type="text" id="surveyNo" placeholder="Enter Survey Number">
+        <button onclick="searchLand()">🔍Search</button>
+        <button onclick="startVoice()">🎤 Speak</button>
+    </div>
+
+    <div class="card" id="result">
+        <p>📌 Search land to see details</p>
+    </div>
+
+    <div class="card">
+        <h3>🗺️ Location</h3>
+        <div id="map"></div>
+    </div>
+
+    <div class="card">
+        <h3>🤖Chat Assistant</h3>
+        <input type="text" id="chatInput" placeholder="Ask something...">
+        <button onclick="chatbot()">Ask</button>
+        <div id="chatOutput"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP93Sbejnv-xkL1iqJRysuoHFkaO0DWJQ"></script>
+
+</body>
+</html>
